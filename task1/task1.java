@@ -1,8 +1,11 @@
-package task1;
+package salarytransformationsystem;
+
 import java.util.*;
 
-public class Main {
+public class task1 {
+
     public static void main(String[] args) {
+
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
@@ -16,5 +19,7 @@ public class Main {
         salaries.stream()
                 .map(salary -> salary + salary * 10 / 100)
                 .forEach(salary -> System.out.print(salary + " "));
+
+        sc.close();
     }
 }
